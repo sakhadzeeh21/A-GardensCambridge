@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A-Gardens Cambridge MockUp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/e8ada9ffa6.js" crossorigin="anonymous"></script>
+	<head>
+		<style> 
+			@font-face {  font-family: Moderne Sans;  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2)}
+			{  box-sizing: border-box;}
+			body {  margin: 0;  background: #000;  background-size: cover;}
+			
+					/*		HEADER		*/
+					
+			.homeVideo {     position: absolute;    top: 0;    left: 0;    width: 100%;    height: 40%;    object-fit: cover;    object-position: center;}
+				header {  position: fixed;  width: 100%;  text-align: center;  color: white;  transition: .4s;}
+				header:hover {  background: rgba(255,255,255,0.8);  color: #000;}
+				.headerLinks { padding-top: 5px;  display: grid; grid-gap: 5px; grid-template-columns: 25% 50%  auto ;    } 
+					.headerLinksLogo		{ background: transparent; 	}
+					.headerLinksLogo img	{ width: 100px; }
+					.headerLinksLinks		{ background: transparent; 	}
+					.headerLinksContact		{ background: transparent; 	display: grid; grid-gap: 5px; grid-template-columns: 15%  auto ;  }
+						.callIcon		 img	{  padding-top: 20px; width: 50px;  border-radius: 50% ; }
+						.callMessageNumber	{	background: transparent; 		}
+						
+				.headerNav 	{	 margin-top: 40px;		}
+				.headerNav a {  text-decoration: none;  color: inherit;  padding: 1.3rem;  }
+				.headerNav a:hover {  background-color: #ddd;		font-weight: bold;		}
+				.headerNav a.active {  color: green;  font-weight: bold; }
+
+				
+				#banner {  height: 70vh; padding-top: 180px;  width: 60%; background: #dde;   align-items: center; z-index : 2; }
+				#otherBanner {  height: 40vh; padding-top: 50px;  width: 60%; background: #dde;   align-items: center; z-index : 2; }
+					.contactHeader {   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 8vmin;  text-align: left;
+							padding-left: 30px; padding-top: 20px; margin: 1rem 2rem;  mix-blend-mode: overlay;  color: #eee;  font-style: bold; font-weight: 80;}
+					.contactParagraph{   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 4vmin;  text-align: left; 
+							text-indent:40px;	margin: 1rem 2rem;  mix-blend-mode: overlay;  color: #eee;  font-weight: 60;}
+			
+
+				
+				.header1 {  font-family: Moderne Sans, sans-serif;  text-align: center;  font-size: 2rem;  width: 100%;  letter-spacing: .5rem;}
+				.header2 {   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 8vmin;  text-align: center;
+							margin: 2rem 3rem 0;  mix-blend-mode: overlay;  color: #eee;  font-weight: 50;}
+				.p1 {   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 3vmin;  text-align: left;   text-indent:40px;
+						margin: 2rem 3rem 0;  mix-blend-mode: overlay;  color: #fff;  font-weight: 20;}
+			
+			
+							/*			CONTACT US	*/
+				#contactUsDiv		{	  background: blue; color: red;  height: 60vh; display: grid; 		 grid-template-columns: 50% auto ;		}
+				#contactUsMap		{	  background: green; color: red; 		}
+				#contactUsForm		{	  background: green; color: white; 	}
+					.contactformHeader {   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 4vmin;  text-align: center;
+							  color: #eee;  }					
+					.contactformParagraph{   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 2.5vmin;  text-align: left; 
+							padding-left: 20px; text-indent:0px;	 color: #eee; }
+			
+					
+
+					/*  		FOOTER		*/
+
+				#footbar {  overflow: hidden;  background-color: #333;}
+				/*
+				#footbar a {  float: left;  display: block;  color: #f2f2f2;  text-align: center;  padding: 14px 16px;  text-decoration: none;  font-size: 17px;}
+				#footbar a:hover {  background-color: #ddd;  color: black;}
+				#footbar a.active {  background-color: #04AA6D;  color: white;}
+
+				*/
+				.midParagraph {  font-size: 22px;   color: green!important; }
+				.smallParagraph {  font-size: 16px; color: green!important; }
+
+				.footbar { display: grid; display: grid; grid-gap: 5px; grid-template-columns: 50% auto ; }  /*   border-top: 2px  solid ; }  */
+				 .footerMenu{   text-align: center;  	color:  green!important;		}
+				 .footerLinks{	color:  green!important;	margin: 10px 0 12px;	padding: 0;}
+				.footerLinks a{	display:inline-block;	line-height: 1.8;  font-weight:40;	font-size: 17px;text-decoration: none;	color:  inherit;}
+				.footerLinks a:before {  content: "|";  line-height: 1.8;  font-weight:30;  font-size: 20px;  left: 0;  color: green!important;  display: inline-block;  padding-right: 5px;}
+				.footerLinks .link-1:before {  content: none;}
+				.footerLinks a:hover {  background-color: #ddd;  color: black; padding-right: 10px; }
+
+				#footbarCopyright { text-align: left;  font-size: 18px;  }
+				#footbarLinks { text-align: right;  }
+
+
+				.ServicesNav 	{	 margin-top: 20px;		}
+				.ServicesNav a {  text-decoration: none;    padding: 1rem;  font-size: 16px; display: inline-block;  color: green!important; }
+								
+
+
+				/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+				@media screen and (max-width: 600px) {
+				  .column {   width: 100%;    height: auto;  }
+				}
+
+
+			
+		</style>
+		
+		
+		<STYLE>	/* OUTLINED INPUT STYLES */
+			
+			:root {
+				--main-blue: #90caf9;
+				--main-white: #fff;
+				--main-grey: rgba(255, 255, 255, 0.23);
+				--main-dark-grey: #121212;
+				--main-ease: cubic-bezier(.65,.05,.36,1);
+			}
+			
+			#treeForm  {   width: 95%; margin: 5px auto ; padding: 5px;  BORDER: 1PX SOLID #BBBBBB;	BORDER-RADIUS: 5PX;	} 
+				.formInput, .formText		{	margin: 2px; display: grid; grid-template-columns: 20% auto ; 		}
+				.formInput		{	height: 40px;		}
+				.formInput input, .formInput select { width: 100%;    color: var(--main-white);    height: 2.5rem;    outline: 1px solid var(--main-grey);    border-radius: 5px;    border: none;
+					background-color: var(--main-dark-grey);    padding-left: 20px;    font-size: 18px;    transition: .1s var(--main-ease);
+				}
+				.formInput label, .formText  label {   margin: 3px;  background-color: transparent;    color: rgba(255, 255, 255, 0.5);
+					text-align: right;    transition: .2s var(--main-ease);    font-size: 1.3rem;    pointer-events: none;    padding: 0 5px;  
+				}
+				.formText textarea {    color: var(--main-white);    height: 6rem;  width: 100%;   outline: 1px solid var(--main-grey);    border-radius: 5px;    border: none;
+					background-color: var(--main-dark-grey);    padding-left: 20px;    font-size: 15px;    transition: .1s var(--main-ease);  display: block; 
+				}
+				
+				.formButtons {	align-items: center;  padding: 3px;  	}
+					.formButtons button{	width: 30%; padding: 5px; margin: 4px ;   border-radius: 10px; background: #dfa ; color: green; float: right; font-size: 1.2rem; 	}
+					
+			
+			
+			.outlined-input {    position: relative;}
+			.outlined-input input, .outlined-input select { width: 100%;    color: var(--main-white);    height: 3rem;    outline: 1px solid var(--main-grey);    border-radius: 5px;    border: none;
+				background-color: var(--main-dark-grey);    padding-left: 20px;    font-size: 18px;    transition: .1s var(--main-ease);
+			}
+			.outlined-input label {    position: absolute;    top: 50%;    left: 5%;    transform: translateY(-50%);    background-color: transparent;    color: rgba(255, 255, 255, 0.5);
+				text-align: center;    transition: .2s var(--main-ease);    font-size: 1.5rem;    pointer-events: none;    padding: 0 5px;  
+			}
+			.outlined-input input:not(:placeholder-shown) ~ label,.outlined-input input:focus ~ label {    top: 0px;    left: 10px;    font-size: 1rem;}
+			.outlined-input select:not(:placeholder-shown) ~ label,.outlined-input select:focus ~ label {    top: 0px;    left: 10px;    font-size: 1rem;}
+			.outlined-input input:focus , .outlined-input select:focus{    outline: 1px solid var(--main-blue) !important;}
+			.outlined-input input:hover, .outlined-input select:hover {    outline: 1px solid var(--main-white);}
+			.outlined-input input:focus ~ label, .outlined-input select:focus ~ label {    color: var(--main-blue) !important;}
+
+			.outlined-input textarea {    color: var(--main-white);    height: 6rem;  width: 100%;   outline: 1px solid var(--main-grey);    border-radius: 5px;    border: none;
+				background-color: var(--main-dark-grey);    padding-left: 20px;    font-size: 15px;    transition: .1s var(--main-ease);
+			}
+			.outlined-input textarea:not(:placeholder-shown) ~ label,.outlined-input textarea:focus ~ label {    top: 0px;    left: 10px;    font-size: 1rem;}
+			.outlined-input textarea:focus {    outline: 1px solid var(--main-blue) !important;}
+			.outlined-input textarea:hover {    outline: 1px solid var(--main-white);}
+			.outlined-input textarea:focus ~ label {    color: var(--main-blue) !important;}
+
+			/* END OUTLINED INPUT STYLES */
+		
+		</STYLE>	
+	</head>
+
+	<body>
+		
+		<div>
+			<video poster="Images/garden12.jpeg" playsinline autoplay muted loop   class = "homeVideo" >
+				<!--	<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm" type="video/webm">			
+						<img src="Images/AGardensInvoiceLogoSmall.jpg" class=" w3-margin-right" style=" width: 100%; 		">
+				-->
+				
+			</video>
+			
+			<header>
+				<div class = "headerLinks" > 
+					<div  class = "headerLinksLogo" >  
+						<img src="Images/AGardensInvoiceLogoSmall.jpg" class=" 	">
+					</div> 
+					<div class = "headerLinksLinks" > 
+						<nav class = "headerNav" >
+							<a href="index.html">	Home		</a>
+							<a href="#aboutUs">	About Us	</a>
+							<a href="#Services">	Services 	</a>
+							<a href="#Gallery">	Gallery 	</a>
+							<a class = "active" href="">	Contact Us	</a>
+						</nav> 
+
+					</div> 
+					<div class = "headerLinksContact" > 	<!--	CONTACT   [Call icon, call message and Number ] 		-->
+						<div class = "callIcon" > 		<img src="Images/smPhoneGreen.jpeg" class=" ">
+						</div>
+						<div class = "callMessageNumber" >  <!--	 call message and Number		-->
+							<p  style = " color: green ; font-size: 1.2rem;  padding: 2px; margin: 0px;   "   > <b> Call us Any Time.  </b> </p>
+							<p> <b>  +447729 003495   </b>  </p> 
+						</div>					
+					</div> 
+				
+				</div> 
+			</header>
+			
+			<div id="otherBanner">
+				<h2  class = "contactHeader"> Contact Us. 				</h2>	<!--		-->
+				<p class = "contactParagraph">  Home / Contact Us  </p> 
+				
+			</div>
+			
+			<div id="contactUsDiv">
+				<div id = "contactUsMap" > 
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78254.31332095759!2d0.03758619939336908!3d52.1989186233788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d85d89f32a012d%3A0x63a320e1a35e3d21!2sCambridge%2C%20UK!5e0!3m2!1sen!2ske!4v1729367857564!5m2!1sen!2ske" 
+								width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				
+				</div> 
+				<div id = "contactUsForm" > 
+					<h2  class = "contactformHeader" > Get in touch for Expert Gardening Services Today!			</h2>	<!--		-->
+					<!--	-->
+					<p class = "contactformParagraph"  style = " color: white!important;  " >  
+						Reach out and let us transform your outdoor space into a stunning, personalized oasis.
+					</p> 
+					<!--  -->
+					<form id = "treeForm" class="w3-container w3-translucent" style = "padding: 2px; "  METHOD="POST" ACTION= ""> 	 <!-- style='display:none;'   -->  
+									<!-- 					-->
+						<div class="formWrapper ">										
+							<div class="formInput" >
+								<label for="fullName"> Full Name:</label>		<input type="text" name="fullName" id="fullName" placeholder="Full Name Here">
+							</div>
+							<div class="formInput" >
+								<label for="email"> Email:</label>		<input type="text" name="email" id="email" placeholder="Email Here">
+							</div>
+							<div class="formInput" >
+								<label for="contacts"> Contacts:</label>		<input type="text" name="contacts" id="contacts" placeholder="Phone Number Here">
+							</div>
+							<div class="formText"  >
+								<label for="message"> Message:</label>			<textarea name="message"  placeholder="Write your message here..."></textarea> 
+							</div>	
+							<div class="formButtons"  >
+									<button name = "sendMessage" id = "sendMessage" class = " w3-col " > Send Message </button> 
+							</div>
+						</div> 
+					</form>
+							
+					
+
+				
+				</div> 
+			</div>
+			
+		</div>
+		
+						
+		<div class = "footer w3-padding-top-16 w3-white"> 	<!--	<div> Subscribe			</div> 			-->
+			<div class = "w3-row" id=""> 
+				<div class = "w3-col w3-container  l3  "> 		
+						<h3  class = "footerMenu"> 	About		</h3>		<!-- WRAP TEXT AROUND LOGO 		-->
+						<div class = " " id = "aboutContent" > <!--	  style = " display: grid; grid-gap: 5px; grid-template-columns: 30% auto ;  " >		-->
+								<img src="Images/AGardensInvoiceLogoSmall.jpg" class=" w3-margin-right" style=" width: 45%; 		">
+								<p style = "font-size: 16px; text-indent: 20px; color: green!important;" >  A-Garden Cambridge offers premium services
+								  ranging from the design and installation of many landscape construction projects including walkways, steps, 
+								  patios, planting, trans-planting, drainage systems, lawn renovation and installation,
+								  paver driveways, and excavation.</p> 
+								<p  style = "font-size: 16px; text-indent: 20px; padding: 10px; " >  
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+									<i class="fa fa-whatsapp" aria-hidden="true"></i>						
+								</p>
+						</div> 
+						
+						
+				</div> 
+				<div class = "w3-col w3-container  l3 "> 		
+						<h3  class = "footerMenu" > 	Explore			</h3>
+						<p class = "midParagraph"  style = "margin-top: 40px; " > Home </p>
+						<p class = "midParagraph"> About Us </p>
+						<p class = "midParagraph"> Services </p>
+						<p class = "midParagraph"> Gallery </p>
+						<p class = "midParagraph"> Contact Us </p>
+				</div> 
+				<div class = "w3-col w3-container  l3 "> 		
+						<h3 class = "footerMenu  "> 		Services	</h3> 
+							<nav class = "ServicesNav" >
+								<a href="#">	Gardens maintenance		</a>   
+								<a href="#">	House & Office Cleaning	</a>
+								<a href="#">	Fence Installation & Repairs 	</a>
+								<a href="#">	Rubbish Clearance, Waste Disposal	</a>
+								<a href="#">	Shade Installation & Disposal 	</a>
+								<a href="#">	Van Removals	</a>
+							</nav>
+				</div> 
+				<div class = "w3-col w3-container  l3 w3-transparent "> 		
+						<h3 class = "footerMenu" > 		Get in Touch		</h3>
+						<p class = "smallParagraph"  style = "margin-top: 40px; " >  <i class="fas fa-map-marker-alt"></i>  Willingham Cambridge, United Kingdom	</P> 
+						<p class = "smallParagraph" >  <i class="fas fa-phone-alt"></i>	07729003495 /  01954488965 </P> 
+						<p class = "smallParagraph" >  <i class="fas fa-at"></i>  agcambs@gmail.com </P> 
+						<p class = "smallParagraph" >  <i class="far fa-clock"></i> 	Mon - Sat 8:00 - 18:00 	</p>
+						
+				</div> 
+				
+			</div> 
+
+		</div> 
+
+
+		<div id="footbar" class = "w3-row w3-padding-small" >
+			<div class = "w3-col l6 " id="footbarCopyright" style = "text-align: left; color:  green!important; " > 	
+				<p> 	A-Gardens Cambridge &copy; 2024. All rights reserved	</p>
+			</div>
+			<div class = "w3-col l6 " style = "text-align: right; color:  green!important; "  id="footbarLinks">  	
+					<p class="footerLinks"   style = "text-align: right;" >
+						<a href="#" class="link-1">Home</a>
+						<a href="#AboutUs">About Us</a>					
+						<a href="#Services">Services</a>			
+						<a href="#Gallery">Gallery</a>					
+						<a href="#faq">Faq</a>					
+						<a href="#ContactUs">Contact Us</a>
+					</p>
+			</div>
+		 
+		</div>
+
+
+
+	</body>
+
+</html>

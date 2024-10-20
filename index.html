@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A-Gardens Cambridge MockUp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/e8ada9ffa6.js" crossorigin="anonymous"></script>
+	<head>
+		<style> 
+			@font-face {  font-family: Moderne Sans;  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2)}
+			{  box-sizing: border-box;}
+			body {  margin: 0;  background: #000;  background-size: cover;}
+			
+					/*		HEADER		*/
+					
+			.homeVideo {     position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;    object-fit: cover;    object-position: center;}
+				header {  position: fixed; z-index: 4;  width: 100%;  text-align: center;  color: white;  transition: .4s;}
+				header:hover {  background: rgba(255,255,255,0.8);  color: #000;}
+				.headerLinks { padding-top: 5px;  display: grid; grid-gap: 5px; grid-template-columns: 25% 50%  auto ;    } 
+					.headerLinksLogo		{ background: transparent; 	}
+					.headerLinksLogo img	{ width: 100px; }
+					.headerLinksLinks		{ background: transparent; 	}
+					.headerLinksContact		{ background: transparent; 	display: grid; grid-gap: 5px; grid-template-columns: 15%  auto ;  }
+						.callIcon		 img	{  padding-top: 20px; width: 50px;  border-radius: 50% ; }
+						.callMessageNumber	{	background: transparent; 		}
+						
+				.headerNav 	{	 margin-top: 40px;		}
+				.headerNav a {  text-decoration: none;  color: inherit;  padding: 1.3rem;  }
+				.headerNav a:hover {  background-color: #ddd;		font-weight: bold;		}
+				.headerNav a.active {  color: green;  font-weight: bold; }
+
+				
+				#banner {  height: 100vh; background: purple; padding-top: 180px;  width: 60%; background: #dde;   align-items: center; z-index : 2; }
+				.header1 {  font-family: Moderne Sans, sans-serif;  text-align: center;  font-size: 2rem;  width: 100%;  letter-spacing: .5rem;}
+				.header2 {   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 9vmin;  text-align: left;
+						margin: 2rem 3rem 0;  mix-blend-mode: overlay;  color: #fff;  font-weight: bold;  }
+				.p1 {   font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;  font-size: 3vmin;  text-align: left;   text-indent:20px;
+						margin: 2rem 3rem 0;  mix-blend-mode: overlay;  background: green; padding: 5px; color: #fff;  }
+			
+			
+							/*  		FOOTER		*/
+
+				#footbar {  overflow: hidden;  background-color: #333;}
+				/*
+				#footbar a {  float: left;  display: block;  color: #f2f2f2;  text-align: center;  padding: 14px 16px;  text-decoration: none;  font-size: 17px;}
+				#footbar a:hover {  background-color: #ddd;  color: black;}
+				#footbar a.active {  background-color: #04AA6D;  color: white;}
+
+				*/
+				.midParagraph {  font-size: 22px;   color: green!important; }
+				.smallParagraph {  font-size: 16px; color: green!important; }
+
+				.footbar { display: grid; display: grid; grid-gap: 5px; grid-template-columns: 50% auto ; }  /*   border-top: 2px  solid ; }  */
+				 .footerMenu{   text-align: center;  	color:  green!important;		}
+				 .footerLinks{	color:  green!important;	margin: 10px 0 12px;	padding: 0;}
+				.footerLinks a{	display:inline-block;	line-height: 1.8;  font-weight:40;	font-size: 17px;text-decoration: none;	color:  inherit;}
+				.footerLinks a:before {  content: "|";  line-height: 1.8;  font-weight:30;  font-size: 20px;  left: 0;  color: green!important;  display: inline-block;  padding-right: 5px;}
+				.footerLinks .link-1:before {  content: none;}
+				.footerLinks a:hover {  background-color: #ddd;  color: black; padding-right: 10px; }
+
+				#footbarCopyright { text-align: left;  font-size: 18px;  }
+				#footbarLinks { text-align: right;  }
+
+
+				.ServicesNav 	{	 margin-top: 20px;		}
+				.ServicesNav a {  text-decoration: none;    padding: 1rem;  font-size: 16px; display: inline-block;  color: green!important; }
+								
+
+
+				/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+				@media screen and (max-width: 600px) {
+				  .column {   width: 100%;    height: auto;  }
+				}
+
+
+			
+		</style>
+	</head>
+
+	<body>
+		
+		<div>
+			<video poster="Images/AGardensInvoiceLogoSmall.jpg" playsinline autoplay muted loop   class = "homeVideo" >
+				<!--	<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm" type="video/webm">			
+						<img src="Images/AGardensInvoiceLogoSmall.jpg" class=" w3-margin-right" style=" width: 100%; 		">
+				-->
+				<source src="Videos/hotelCarPark.mp4" type="video/mp4">			
+			</video>
+			
+			<header>
+				<div class = "headerLinks" > 
+					<div  class = "headerLinksLogo" >  
+						<img src="Images/AGardensInvoiceLogoSmall.jpg" class=" 	">
+					</div> 
+					<div class = "headerLinksLinks" > 
+						<nav class = "headerNav" >
+							<a class = "active" href="#">	Home		</a>
+							<a href="#aboutUs">	About Us	</a>
+							<a href="#Services">	Services 	</a>
+							<a href="#Gallery">	Gallery 	</a>
+							<a href="contactUs.html">	Contact Us	</a>
+						</nav> 
+
+					</div> 
+					<div class = "headerLinksContact" > 
+						<div class = "callIcon" > 		<img src="Images/smPhoneGreen.jpeg" class=" ">
+						</div>
+						<div class = "callMessageNumber" >  <!--	 call message and Number		-->
+							<p  style = " color: green ; font-size: 1.2rem;  padding: 2px; margin: 0px;   "   > <b> Call us Any Time.  </b> </p>
+							<p> <b>  +447729 003495   </b>  </p> 
+						</div>
+					</div> 
+				
+				</div> 
+				<!--	<h1>ZIGGY</h1>	<nav>	<a href="#">Men</a>	<a href="#">Women</a>	<a href="#">Stores</a>		<a href="#">Contact</a>		</nav> 	-->
+			</header>
+			
+			<div id="banner">
+				<!--	<p class = "p1">  A-Gardens Cambridge  </p> 		-->
+				<h2  class = "header2">	Transform your outdoor space into a lush paradise. 				</h2>	<!--		-->
+				<p  class = "p1">	Whether you are dreaming of a vibrant garden, a serene patio, or a functional outdoor living space, 
+					our team of skilled landscapers and gardeners is here to bring your vision to life. Let us create a landscape you will love.
+				</p>
+			</div>
+			
+			
+		</div>
+		
+		<div style=" color: #eee ; height: 100vh; " > 
+			<p class = "p2"> DIV </p>
+		
+		</div>
+		
+		
+				
+		<div class = "footer w3-padding-top-64 w3-white"> 	<!--	<div> Subscribe			</div> 			-->
+			<div class = "w3-row w3-padding-small" id=""> 
+				<div class = "w3-col w3-container  l3  "> 		
+						<h3  class = "footerMenu"> 	About		</h3>		<!-- WRAP TEXT AROUND LOGO 		-->
+						<div class = " " id = "aboutContent" > <!--	  style = " display: grid; grid-gap: 5px; grid-template-columns: 30% auto ;  " >		-->
+								<img src="Images/AGardensInvoiceLogoSmall.jpg" class=" w3-margin-right" style=" width: 50%; 		">
+								<p style = "font-size: 16px; text-indent: 20px; color: green!important;" >  A-Garden Cambridge offers premium services
+								  ranging from the design and installation of many landscape construction projects including walkways, steps, 
+								  patios, planting, trans-planting, drainage systems, lawn renovation and installation,
+								  paver driveways, and excavation.</p> 
+								<p  style = "font-size: 16px; text-indent: 20px; padding: 10px; " >  
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+									<i class="fa fa-whatsapp" aria-hidden="true"></i>						
+								</p>
+						</div> 
+						
+						
+				</div> 
+				<div class = "w3-col w3-container  l3 "> 		
+						<h3  class = "footerMenu" > 	Explore			</h3>
+						<p class = "midParagraph"  style = "margin-top: 40px; " > Home </p>
+						<p class = "midParagraph"> About Us </p>
+						<p class = "midParagraph"> Services </p>
+						<p class = "midParagraph"> Gallery </p>
+						<p class = "midParagraph"> Contact Us </p>
+				</div> 
+				<div class = "w3-col w3-container  l3 "> 		
+						<h3 class = "footerMenu  "> 		Services	</h3> 
+							<nav class = "ServicesNav" >
+								<a href="#">	Gardens maintenance		</a>   
+								<a href="#">	House & Office Cleaning	</a>
+								<a href="#">	Fence Installation & Repairs 	</a>
+								<a href="#">	Rubbish Clearance, Waste Disposal	</a>
+								<a href="#">	Shade Installation & Disposal 	</a>
+								<a href="#">	Van Removals	</a>
+							</nav>
+				</div> 
+				<div class = "w3-col w3-container  l3 w3-transparent "> 		
+						<h3 class = "footerMenu" > 		Get in Touch		</h3>
+						<p class = "smallParagraph"  style = "margin-top: 40px; " >  <i class="fas fa-map-marker-alt"></i>  Willingham Cambridge, United Kingdom	</P> 
+						<p class = "smallParagraph" >  <i class="fas fa-phone-alt"></i>	07729003495 /  01954488965 </P> 
+						<p class = "smallParagraph" >  <i class="fas fa-at"></i>  agcambs@gmail.com </P> 
+						<p class = "smallParagraph" >  <i class="far fa-clock"></i> 	Mon - Sat 8:00 - 18:00 	</p>
+						
+				</div> 
+				
+			</div> 
+
+		</div> 
+
+
+		<div id="footbar" class = "w3-row w3-padding-small" >
+			<div class = "w3-col l6 w3-padding-small" id="footbarCopyright" style = "text-align: left; color:  green!important; " > 	
+				<p> 	A-Gardens Cambridge &copy; 2024. All rights reserved	</p>
+			</div>
+			<div class = "w3-col l6 w3-padding-small" style = "text-align: right; color:  green!important; "  id="footbarLinks">  	
+					<p class="footerLinks"   style = "text-align: right;" >
+						<a href="#" class="link-1">Home</a>
+						<a href="#AboutUs">About Us</a>					
+						<a href="#Services">Services</a>			
+						<a href="#Gallery">Gallery</a>					
+						<a href="#faq">Faq</a>					
+						<a href="#ContactUs">Contact Us</a>
+					</p>
+			</div>
+		 
+		</div>
+
+
+
+	</body>
+
+</html>
